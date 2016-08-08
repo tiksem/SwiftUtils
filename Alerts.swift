@@ -3,6 +3,8 @@
 // Copyright (c) 2015 ___FULLUSERNAME___. All rights reserved.
 //
 
+#if os(iOS)
+
 import Foundation
 import UIKit
 
@@ -38,3 +40,5 @@ public struct Alerts {
         controller.presentViewController(deleteAlert, animated:true, completion:nil)
     }
 }
+
+#endif

@@ -3,6 +3,8 @@
 // Copyright (c) 2016 ___FULLUSERNAME___. All rights reserved.
 //
 
+#if os(iOS)
+
 import Foundation
 import UIKit
 
@@ -298,3 +300,5 @@ public extension UITableView {
 //            lineBreakMode:UILineBreakModeTailTruncation];
 //    }
 //}
+
+#endif

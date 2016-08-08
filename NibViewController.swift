@@ -3,10 +3,10 @@
 // Copyright (c) 2016 ___FULLUSERNAME___. All rights reserved.
 //
 
+#if os(iOS)
+
 import Foundation
 import UIKit
-
-
 
 public class NibViewController : UIViewController {
     private let nibFileName:String!
@@ -39,3 +39,5 @@ public class NibViewController : UIViewController {
         super.init(coder: coder)
     }
 }
+
+#endif

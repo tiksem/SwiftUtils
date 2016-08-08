@@ -6,6 +6,8 @@
 //  Copyright © 2016 Semyon Tikhonenko. All rights reserved.
 //
 
+#if os(iOS)
+
 import Foundation
 import UIKit
 
@@ -19,3 +21,5 @@ public class Maps {
         }
     }
 }
+
+#endif

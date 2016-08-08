@@ -4,7 +4,9 @@
 //
 
 import Foundation
+#if os(iOS)
 import UIKit
+#endif
 
 public class Network {
     public static func getStringFromUrl(url:String,
@@ -262,6 +264,8 @@ public class Network {
         }, args: args, offsetKey: offsetKey, limitKey: limitKey, mergeArgs: mergeArgs, onArgsMerged: onArgsMerged, canceler: canceler)
     }
 
+#if os(iOS)
+
     public static func loadImageFromURL(uri:String) throws -> UIImage {
         if let url = NSURL(string: uri) {
             if let data = NSData(contentsOfURL: url) {
@@ -276,4 +280,6 @@ public class Network {
 
         throw IOError.InvalidUrl
     }
+
+#endif
 }
